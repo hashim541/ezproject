@@ -14,7 +14,7 @@ function Landing(){
                 </h1>
                 <p className="lan-p"> Showcase Your Project Here, we provide a platform for developers to share and showcase their amazing projects with the world. Whether you're a beginner or an experienced developer, our platform allows you to showcase your creativity, skills, and innovations to a global audience.</p>
             </div>
-            <Link to='login' onClick={()=>setMenu(false)}><button className='p-btn login'>Login</button></Link>
+            <Link to='login' onClick={()=>setMenu(false)}><button className='p-btn gs'>Get Started</button></Link>
         </div>
     )
 }
