@@ -46,7 +46,7 @@ function App(){
             <Route path='followers/:userId' element={<Followers/>} />
           </Route>
 
-          {/* <Route path='*' element={<Navigate to='/login' replace />} /> */}
+          <Route path='*' element={<Navigate to='/login' replace />} />
 
         </Routes>
       </main>
