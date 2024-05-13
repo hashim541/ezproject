@@ -1,9 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import useAppContext from "../components/useAppContext";
 
 
 function Landing(){
     const {setNav} = useAppContext()
+    const navigate = useNavigate();
     setNav('landing')
     return(
         <div className="landing">
@@ -14,7 +15,10 @@ function Landing(){
                 </h1>
                 <p className="lan-p"> Showcase Your Project Here, we provide a platform for developers to share and showcase their amazing projects with the world. Whether you're a beginner or an experienced developer, our platform allows you to showcase your creativity, skills, and innovations to a global audience.</p>
             </div>
-            <Link to='/login' onClick={()=>setMenu(false)}><button className='p-btn gs'>Get Started</button></Link>
+            <button className='p-btn gs' onClick={()=>{
+                setMenu(false)
+                navigate('/login')
+            }}>Get Started</button>
         </div>
     )
 }
