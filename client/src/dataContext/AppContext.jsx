@@ -6,7 +6,7 @@ const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
 
-    const srv_url = 'http://localhost:3000'
+    const srv_url = 'https://ezproject.onrender.com'
     const [User,setUser] = useState({auth:false})
     const [nav,setNav] = useState('landing')
     const [notification,setNotification] = useState([])
