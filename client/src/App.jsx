@@ -32,8 +32,8 @@ function App(){
 
          
           <Route index path='/' element={<Landing />} />
-          <Route path='/login' element={<Login />}/>
-          <Route path='/register' element={<Register />}/>
+          <Route path='login' element={<Login />}/>
+          <Route path='register' element={<Register />}/>
          
 
           <Route path='/home' element={<AuthRequired/>}>
