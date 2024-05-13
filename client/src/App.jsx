@@ -22,7 +22,7 @@ function App(){
     <>
 
       {/* notification */}
-    <Router >
+    <Router basename='/ezproject'>
       <AppProvider>
       <Navbar />
       <main className='main'>
